@@ -63,7 +63,7 @@ jobs:
           zip -r ${kicad_project_name}-gerbers.zip gerbers
           sudo rm -r gerbers
 
-      -name: Add design files to repo
+      - name: Add design files to repo
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
