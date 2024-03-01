@@ -74,7 +74,7 @@ jobs:
           git add ${workflow_project_dir}/outputs/*
           git commit -m "Add design file PDFs to repo [skip ci]"
           git push origin ${documentation_branch}
-          gh pr create --head ${documentation_branch} --base main --title "Add design file PDFs to repo" --body "Automated PR from GHA"
+          gh pr create --head ${documentation_branch} --base main --title "Add design files to repo" --body "Automated PR from GHA"
 
 
       - name: Archive artifacts
